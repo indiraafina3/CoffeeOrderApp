@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity"
+    android:layout_margin="16dp">
+
+    <EditText
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Please enter your name"/>
+    <Button
+        android:layout_toRightOf="@+id/nama"
+        android:text="ORDER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/topping1"
+        android:layout_below="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toppings"
+        />
+    <TextView
+        android:id="@+id/title2"
+        android:layout_below="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toppings"
+        />
+    <CheckBox
+        android:id="@+id/ch1"
+        android:text="Whipped Cream"
+        android:layout_below="@id/topping1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/ch2"
+        android:text="Chocolate"
+        android:layout_below="@+id/ch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_toRightOf="@id/topping1"
+        android:layout_marginLeft="130dp"
+        android:layout_below="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toppings"
+        />
+    <CheckBox
+        android:layout_toRightOf="@+id/topping1"
+        android:layout_marginLeft="130dp"
+        android:id="@+id/ch3"
+        android:text="Whipped Cream"
+        android:layout_below="@id/topping1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/ch4"
+        android:layout_marginLeft="130dp"
+        android:layout_toRightOf="@id/topping1"
+        android:text="Chocolate"
+        android:layout_below="@+id/ch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="135dp"
+        android:layout_height="131dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="161dp"
+        android:src="@drawable/images"
+        android:layout_alignParentLeft="true" />
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_toRightOf="@id/img"
+        android:layout_marginLeft="190dp"
+        android:layout_width="135dp"
+        android:layout_height="131dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="161dp"
+        android:src="@drawable/unnamed"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:onClick="minus"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/kurang"
+        android:text="-"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/img"
+        />
+
+    <TextView
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+        android:id="@+id/drink1"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/kurang"
+        android:layout_below="@id/img"
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="add"
+        android:id="@+id/tambah"
+        android:layout_marginLeft="10dp"
+        android:text="+"
+        android:layout_toRightOf="@id/drink1"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/img"
+        />
+    <Button
+        android:onClick="minus1"
+        android:layout_marginLeft="210dp"
+        android:id="@+id/kurang1"
+        android:text="-"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/img2"
+        />
+    <TextView
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+        android:layout_below="@id/img2"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/kurang1"
+        android:id="@+id/drink2"
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="add2"
+        android:id="@+id/tambah2"
+        android:layout_marginLeft="10dp"
+        android:text="+"
+        android:layout_toRightOf="@id/drink2"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/img2"/>
+    <TextView
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+        android:id="@+id/harga1"
+        android:text="Rp. 0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kurang"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+        android:id="@+id/harga2"
+        android:text="Rp. 0"
+        android:layout_marginLeft="210dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kurang1"
+        android:layout_marginTop="10dp"
+        />
+</RelativeLayout>
